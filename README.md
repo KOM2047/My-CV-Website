@@ -1,4 +1,3 @@
-# My-CV-Website
 # Kabelo Modimoeng - CV Website
 
 ## 📌 Overview
