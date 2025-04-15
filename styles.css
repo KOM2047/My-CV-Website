@@ -95,7 +95,7 @@
     text-align: center;
     padding: 20px;
     font-size: 14px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-wrap: wrap; /* Allows items to wrap in case of overflow */
 }
