@@ -94,8 +94,11 @@
     padding: 20px;
     font-size: 14px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     overflow-x: hidden;
+    display: felx;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap; /* Allows items to wrap in case of overflow */
 }
 
