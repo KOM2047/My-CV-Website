@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-
+body {
+    overflow-x: hidden; /* Disables horizontal scrolling globally */
+}
 
 .container {
     display: flex;
