@@ -101,6 +101,10 @@
     align-items: center;
     flex-wrap: wrap; /* Allows items to wrap in case of overflow */
 }
+.footer * {
+    max-width: 100%;
+    overflow: hidden;
+}
 
 .contact form {
     display: flex;
