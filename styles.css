@@ -147,6 +147,6 @@
     .footer {
         flex-direction: column; /* Stack footer items vertically */
         padding: 10px; /* Reduce padding for smaller screens */
-        font-size: 12px; /* Make font size smaller for mobile */
+        font-size: 14px; /* Make font size smaller for mobile */
     }
 }
