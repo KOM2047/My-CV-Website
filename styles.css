@@ -101,7 +101,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* Allows wrapping of content */
     overflow: visible; /* Ensure no content is hidden */
 }
 
@@ -159,10 +158,10 @@ body {
         width:100%;
     }
     .footer {
-        flex-direction: column; /* Stack footer items vertically */
-        padding: 10px; /* Reduce padding for smaller screens */
-        font-size: 14px; /* Make font size smaller for mobile */
-        overflow-x: hidden;
-        align-items: center;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        padding: 10px; /* Maintain sufficient space */
+        font-size: 12px; /* Adjust for readability */
+        height: auto; /* Let the footer adjust dynamically */
     }
 }
