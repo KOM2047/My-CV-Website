@@ -96,7 +96,8 @@
     padding: 20px;
     font-size: 14px;
     width: 100vw;
-    
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap in case of overflow */
 }
 
 .contact form {
@@ -143,5 +144,10 @@
     }
     .left-panel,.right-panel{
         width:100%;
+    }
+    .footer {
+        flex-direction: column; /* Stack footer items vertically */
+        padding: 10px; /* Reduce padding for smaller screens */
+        font-size: 12px; /* Make font size smaller for mobile */
     }
 }
