@@ -90,21 +90,18 @@ body {
 }
 
 .footer {
-    background: #222; /* Dark footer background */
+    background: #222;
     color: white;
     text-align: center;
     padding: 20px;
     font-size: 14px;
     width: 100%;
-    margin: 0;
-    height: auto;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    overflow: visible;
+    height: auto; /* Adapt height based on content */
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* Allows items to wrap in case of overflow */
+    flex-wrap: wrap; /* Allows wrapping of content */
+    overflow: visible; /* Ensure no content is hidden */
 }
 
 .contact form {
@@ -155,7 +152,8 @@ body {
     .footer {
         flex-direction: column; /* Stack footer items vertically */
         padding: 10px; /* Reduce padding for smaller screens */
-        font-size: 12px; /* Make font size smaller for mobile */
+        font-size: 14px; /* Make font size smaller for mobile */
         overflow-x: hidden;
+        align-items: center;
     }
 }
