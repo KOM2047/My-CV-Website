@@ -97,7 +97,9 @@ body {
     font-size: 14px;
     width: 100%;
     margin: 0;
+    height: auto;
     overflow-x: hidden;
+    overflow-y: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
