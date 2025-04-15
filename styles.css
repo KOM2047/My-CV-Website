@@ -1,8 +1,18 @@
-.container {
-    display: flex;
-    height: 100vh; /* Full page height */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh; /* Full page height */
+    width: 100vw;
+    
+    
 }
 
 .left-panel {
@@ -10,6 +20,7 @@
     background: url('profile.jpg') no-repeat center center;
     background-size: cover; /* Makes the image cover the full section */
     height: 100vh;
+    width: 50%;
 }
 
 .profile-photo {
@@ -18,9 +29,7 @@
 
 .right-panel {
     flex: 1;
-    padding: 0;
-    margin: 0;
-    width: 100%;
+    width: 50%;
     height: 100vh; /* Matches left-panel height */
     display: flex;
     flex-direction: column;
@@ -86,7 +95,8 @@
     text-align: center;
     padding: 20px;
     font-size: 14px;
-    width: 100%;
+    width: 100vw;
+    
 }
 
 .contact form {
@@ -131,7 +141,7 @@
     .container {
         flex-direction: column;
     }
-    .left-panel {
-        height: 50vh; /* Adjust height for mobile */
+    .left-panel,.right-panel{
+        width:100%;
     }
 }
