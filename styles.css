@@ -104,6 +104,12 @@ body {
     overflow: visible; /* Ensure no content is hidden */
 }
 
+.footer * {
+    max-width: 100%; /* Adapt size to container */
+    width: auto; /* Ensure flexibility */
+    overflow: visible; /* Prevent hidden content */
+}
+
 .contact form {
     display: flex;
     flex-direction: column;
