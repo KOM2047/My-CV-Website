@@ -150,18 +150,19 @@ body {
     color: #333;
 }
 
-.weather-section {
+.location-section {
+    text-align: center;
     background-color: #f0f8ff;
     color: #333;
     padding: 20px;
-    text-align: center;
-    border-radius: 10px;
     margin-top: 20px;
+    border-radius: 10px;
 }
 
-.weather {
+.location, .weather {
     font-size: 18px;
     font-weight: bold;
+    margin: 10px 0;
 }
 
 @media (max-width: 768px) {
