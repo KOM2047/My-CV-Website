@@ -4,10 +4,14 @@ if (navigator.geolocation) {
         const latitude = position.coords.latitude;
         const longitude = position.coords.longitude;
         console.log(`Lat: ${latitude}, Long: ${longitude}`);
-        getWeather(latitude, longitude); // Call weather function
+        
+        // Fetch weather and location data
+        getWeather(latitude, longitude);
+        getLocation(latitude, longitude);
     }, error => {
         console.error("Error getting location:", error);
-        alert("Unable to get your location.");
+        document.querySelector('.location').textContent = 
+            "Unable to get your location. Please enable location services.";
     });
 } else {
     alert("Geolocation is not supported by your browser.");
@@ -27,4 +31,18 @@ function getWeather(lat, lon) {
                 `Current Weather: ${weather}, ${temperature}°C`;
         })
         .catch(error => console.error("Error fetching weather:", error));
+}
+
+// Fetch location data
+function getLocation(lat, lon) {
+    const apiUrl = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}`;
+
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            const city = data.address.city || data.address.town || data.address.state || data.address.country;
+            document.querySelector('.location').textContent =
+                `You are currently in: ${city}`;
+        })
+        .catch(error => console.error("Error fetching location:", error));
 }
