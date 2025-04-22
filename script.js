@@ -15,7 +15,7 @@ if (navigator.geolocation) {
 
 // Fetch weather data
 function getWeather(lat, lon) {
-    const apiKey = "62d01bf13d768cbb02da9a1b4eec72d2";
+    const apiKey = "51e9ed79d0c6737f4c59162ef8dc84f3";
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
 
     fetch(url)
