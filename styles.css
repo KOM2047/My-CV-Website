@@ -150,6 +150,20 @@ body {
     color: #333;
 }
 
+.weather-section {
+    background-color: #f0f8ff;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.weather {
+    font-size: 18px;
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
